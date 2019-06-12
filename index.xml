@@ -23,48 +23,39 @@ alpine karena image ini berukuran sangat kecil jadi hemat beberapa space :P&lt;/
     </item>
     
     <item>
-      <title>Vta</title>
-      <link>https://nicovicz.github.io/posts/vta/</link>
-      <pubDate>Wed, 12 Jun 2019 16:44:03 +0700</pubDate>
-      
-      <guid>https://nicovicz.github.io/posts/vta/</guid>
-      <description>Aplikasi Web VTA http://vta.dephub.go.id yang dibuat bersama tim selama 3 bulan sudah berjalan 3 tahun lebih, sudah banyak perubahan dari versi awal dan pertumbuhan database pun sangat signifikan dan sekarang sudah 6GB lebih, hanya database aja belum lagi file-file upload dari pemohon dan juga file pdf hasil generate. Kita lihat jika sudah sampai 5 tahun apakah bisa dibuat data warehouse?</description>
-    </item>
-    
-    <item>
       <title>Api Siasati</title>
       <link>https://nicovicz.github.io/posts/api-siasati/</link>
-      <pubDate>Wed, 12 Jun 2019 16:43:30 +0700</pubDate>
+      <pubDate>Tue, 11 Jun 2019 16:43:30 +0700</pubDate>
       
       <guid>https://nicovicz.github.io/posts/api-siasati/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://nicovicz.github.io/posts/hello-world/</link>
-      <pubDate>Wed, 12 Jun 2019 16:43:03 +0700</pubDate>
-      
-      <guid>https://nicovicz.github.io/posts/hello-world/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post3</title>
-      <link>https://nicovicz.github.io/posts/frontend-siasati/</link>
-      <pubDate>Wed, 12 Jun 2019 07:31:38 +0700</pubDate>
-      
-      <guid>https://nicovicz.github.io/posts/frontend-siasati/</guid>
-      <description>select a.tanggal,sum(naik) naik from mst_event_date a join mst_event b on a.event_id = b.event_id and b.tahun = &amp;lsquo;2019&amp;rsquo; and b.tipe = &amp;lsquo;LBR&amp;rsquo; and id_moda = &amp;lsquo;4&amp;rsquo;</description>
+      <description>Untuk bagian API masih ragu apakah memakai Java menggunakan SpringBoot atau Golang Rest Server setelah mencoba-coba preview akhirnya jatuh pilihan paka Golang karena simple tidak membutuhkan IDE yang berat semacam Intelijj cukup menggunakan editor seperti Visual Studio Code</description>
     </item>
     
     <item>
       <title>Backend Aplikasi SIASATI</title>
       <link>https://nicovicz.github.io/posts/backend-siasati/</link>
-      <pubDate>Tue, 11 Jun 2019 07:31:35 +0700</pubDate>
+      <pubDate>Sat, 08 Jun 2019 07:31:35 +0700</pubDate>
       
       <guid>https://nicovicz.github.io/posts/backend-siasati/</guid>
-      <description>Pembaharuan aplikasi SIASATI untuk backend sepertinya akan memakai Framework PHP yang terkenal yaitu Laravel dengan versi terakhir yaitu versi 5.8 :) Fitur-fiturnya cukup lengkap sesuai dengan kebutuhan untuk membangun ulang aplikasi SIASATI ini dan juga sudah support Vue, Yeaay..</description>
+      <description>Pembaharuan aplikasi SIASATI untuk backend sepertinya akan memakai Framework PHP yang terkenal yaitu Laravel dengan versi terakhir yaitu versi 5.8 :) Fitur-fiturnya cukup lengkap sesuai dengan kebutuhan untuk membangun ulang aplikasi SIASATI ini dan juga sudah support Vue, yang akan dibuat pertama-tama adalah migration lalu seeder dan system management seperti user, role dan permission</description>
+    </item>
+    
+    <item>
+      <title>Frontend Siasati</title>
+      <link>https://nicovicz.github.io/posts/frontend-siasati/</link>
+      <pubDate>Fri, 07 Jun 2019 07:31:38 +0700</pubDate>
+      
+      <guid>https://nicovicz.github.io/posts/frontend-siasati/</guid>
+      <description>Bagian frontend untuk Aplikasi SIASATI cukup menantang karena menggunakan Angular 6, mengapa Angular? karena Angular merupakan framework javascript yang lengkap dibanding 2 library javascript lain seperti React dan Vue dan karena frontend hanya view data maka cukup menggunakan bahasa pemrograman client-side seperti javascript.</description>
+    </item>
+    
+    <item>
+      <title>Vta</title>
+      <link>https://nicovicz.github.io/posts/vta/</link>
+      <pubDate>Thu, 06 Jun 2019 16:44:03 +0700</pubDate>
+      
+      <guid>https://nicovicz.github.io/posts/vta/</guid>
+      <description>Aplikasi Web VTA http://vta.dephub.go.id yang dibuat bersama tim selama 3 bulan sudah berjalan 3 tahun lebih, sudah banyak perubahan dari versi awal dan pertumbuhan database pun sangat signifikan dan sekarang sudah 6GB lebih, hanya database aja belum lagi file-file upload dari pemohon dan juga file pdf hasil generate. Kita lihat jika sudah sampai 5 tahun apakah bisa dibuat data warehouse?</description>
     </item>
     
     <item>
@@ -74,7 +65,18 @@ alpine karena image ini berukuran sangat kecil jadi hemat beberapa space :P&lt;/
       
       <guid>https://nicovicz.github.io/posts/mengubah-aplikasi-siasati/</guid>
       <description>&lt;p&gt;Aplikasi SIASATI di &lt;a href=&#34;http://siasati.dephub.go.id&#34;&gt;http://siasati.dephub.go.id&lt;/a&gt; sepertinya harus diubah, secara fungsional masih
-dapat berjalan dengan baik&lt;/p&gt;</description>
+dapat berjalan dengan baik untuk database masih dengan menggunakan MySQL tidak ada masalah dengan hal itu tetapi untuk penyajian data grafik-grafik akan lebih baik menggunakan database yang menyediakan fungsi itu seperti PostgreSQL. Rencananya semua aplikasi akan dipisah-pisah seperti API, Frontend dan Backend. API untuk penyedia data untuk Frontend dengan menggunakan teknologi GO Rest sedangkan Frontend akan menyajikan data dashboard menggunakan teknologi Angular 6 dan Backend akan menggunakan Laravel 5.8&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://nicovicz.github.io/posts/hello-world/</link>
+      <pubDate>Wed, 29 May 2019 16:43:03 +0700</pubDate>
+      
+      <guid>https://nicovicz.github.io/posts/hello-world/</guid>
+      <description>&lt;p&gt;Phew jadi juga blog ini, lumayan rumit juga terutama bagian deploy ke github Blog ini dibuat
+menggunakan &lt;strong&gt;Hugo&lt;/strong&gt; (blog engine dari bahasa pemrograman GO) cepat juga dibanding dengan jekyll
+yang struktur foldernya lumayan kompleks dan untuk styling CSS, blog ini menggunakan &lt;strong&gt;NESS CSS&lt;/strong&gt; yaitu CSS utility bergaya retro game 8-bit :). Untuk masalah font, blog ini menggunakan font &lt;strong&gt;Press Start 2P&lt;/strong&gt; dan &lt;strong&gt;Fira&lt;/strong&gt;. Masih banyak hal yang harus diperbaiki dari template blog ini seperti merapihkan style karena masih banyak inline style jika sudah stabil mungkin akan saya release untuk public.&lt;/p&gt;</description>
     </item>
     
   </channel>
